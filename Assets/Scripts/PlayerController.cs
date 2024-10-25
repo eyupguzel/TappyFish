@@ -10,8 +10,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] float speed;
     private float angle;
-    private float maxAngle = 20;
-    private float minAngle = -60;
+    private readonly float maxAngle = 20;
+    private readonly float minAngle = -60;
     private int score = 0;
     private int highScore = 0;
 
@@ -68,21 +68,21 @@ public class PlayerController : MonoBehaviour
             {
                 if (angle < maxAngle)
                 {
-                    angle += 4;
+                    angle += 2;
                 }
             }
             else if (rb.velocity.y < -1.2f)
             {
                 if (angle >= minAngle)
                 {
-                    angle -= 2;
+                    angle -= 1;
                 }
             }
             transform.rotation = Quaternion.Euler(0, 0, angle);
         }
         
     }
-    private void highScored()
+    private void HighScore()
     {
         if (highScore < score)
         {
@@ -125,7 +125,7 @@ public class PlayerController : MonoBehaviour
         anim.enabled = false;
         manager.gameOverPanel.SetActive(true);
         panelScore.text = score.ToString();
-        highScored();
+        HighScore();
         hit.Play();
     }
 }

@@ -8,7 +8,7 @@ public class MoveLeft : MonoBehaviour
     private BoxCollider2D box;
     private float sizeCollider;
     private float obstacleWidth;
-    private float leftBound = -10f;
+    //[SerializeField] private float leftBound = -10f;
 
     GameManager manager;
 
@@ -34,7 +34,7 @@ public class MoveLeft : MonoBehaviour
         //transform.position = new Vector2(transform.position.x * -speed * Time.deltaTime, transform.position.y);
 
         if(!manager.gameOver)
-            transform.Translate(Vector2.left * speed * Time.deltaTime);
+            transform.Translate(Vector2.left * (speed * Time.deltaTime));
 
         if (gameObject.CompareTag("Ground"))
         {

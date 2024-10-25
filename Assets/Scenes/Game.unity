@@ -762,7 +762,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de4841940bc4be4a966f6d63d1491e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 3521362194722866276, guid: abfba70ab4d892945b4c0c201aaf216b, type: 3}
   spawnInterval: 2.5
   objectPool: {fileID: 0}
 --- !u!4 &454725962

@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         gameOverPanel.SetActive(false);
+        Application.targetFrameRate = 60;
     }
 
     

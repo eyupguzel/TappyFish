@@ -135,7 +135,7 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 1.0.1
+  bundleVersion: 31
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -254,8 +254,8 @@ PlayerSettings:
   useCustomGradlePropertiesTemplate: 0
   useCustomGradleSettingsTemplate: 0
   useCustomProguardFile: 0
-  AndroidTargetArchitectures: 1
-  AndroidTargetDevices: 0
+  AndroidTargetArchitectures: 3
+  AndroidTargetDevices: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: 
@@ -282,7 +282,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: c3c376061e6e5bf4792545edd9a69c2d, type: 3}
+      m_Icon: {fileID: 2800000, guid: ae7dfe5d25389d844bcf2bb175a9c251, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -696,7 +696,8 @@ PlayerSettings:
   scriptingDefineSymbols: {}
   additionalCompilerArguments: {}
   platformArchitecture: {}
-  scriptingBackend: {}
+  scriptingBackend:
+    Android: 1
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration: {}
   managedStrippingLevel:
